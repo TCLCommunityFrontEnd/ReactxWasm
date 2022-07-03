@@ -41,3 +41,8 @@
   display: flex;
   justify-content: space-around;
 }
+.ellipse{
+  height:100px;
+  word-break: break-all;
+  overflow-y: auto;
+}

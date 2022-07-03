@@ -39,6 +39,7 @@
  (export "Base64#constructor" (func $assembly/module/Base64#constructor))
  (export "getBase64" (func $assembly/module/getBase64))
  (export "fib" (func $assembly/module/fib))
+ (export "acc" (func $assembly/module/acc))
  (func $~lib/rt/tlsf/removeBlock (param $0 i32) (param $1 i32)
   (local $2 i32)
   (local $3 i32)
@@ -3671,6 +3672,11 @@
   i32.add
   i32.const 0
   i32.or
+ )
+ (func $assembly/module/acc (param $0 i32) (param $1 i32) (result i32)
+  local.get $0
+  local.get $1
+  i32.add
  )
  (func $~lib/rt/pure/finalize (param $0 i32)
   i32.const 0
